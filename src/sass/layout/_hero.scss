@@ -8,7 +8,6 @@
   @media screen and (min-width: 1280px) {
     padding: 0 68px;
     max-width: 1280px;
-    margin: 0 auto;
   }
 }
 .hero .container {
@@ -16,11 +15,6 @@
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     max-width: 800px;
   }
-  // background-color: var(--font-primary-color);
-  // @media screen and (min-width: 1280px) {
-  //   max-width: 1280px;
-  //   z-index: -2;
-  // }
 }
 
 .hero__title {
@@ -32,7 +26,6 @@
   text-transform: uppercase;
   color: var(--text-main-color);
   margin-bottom: 20px;
-
   @media screen and (max-width: 767px) {
     font-size: 26px;
   }
@@ -113,10 +106,10 @@
     height: 40px;
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-      &:hover,
-    &:focus {
-    background: #ECEBEB;
-    }
+  &:hover,
+  &:focus {
+    background: #ecebeb;
+  }
 }
 
 .hero__link-made {
@@ -142,7 +135,6 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
-
   @media screen and (min-width: 1280px) {
     font-size: 14px;
     padding-top: 60px;
@@ -243,7 +235,6 @@
   .hero {
     background-image: url('../images/mobile/m-hero-icecream.png');
     background-repeat: no-repeat;
-
     background-size: 346px 419px;
     background-position: left 33px bottom;
   }
@@ -253,9 +244,8 @@
   .hero {
     background-image: url('../images/mobile/m-hero-icecream@2x.png');
     background-repeat: no-repeat;
-
-    background-size: 346px 419px;
-    background-position: center 33px bottom;
+    background-size: 100vw;
+    background-position: left 50px 0;
   }
 }
 
