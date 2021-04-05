@@ -84,7 +84,7 @@
     box-shadow: -1px -1px 0px 4px var(--font-item-secondary-color);
     border-radius: 5%;
     overflow: hidden;
-    overflow-y: scroll;
+    // overflow-y: scroll;
     
     @media screen and (min-width:1280px) {
         max-width: 580px;
@@ -132,4 +132,5 @@
 
 .contacts__backdrop-fr-title {
     text-align: center;
+    margin-bottom: 35px;
 }
