@@ -29,6 +29,12 @@
   color: var(--text-alt-color);
   z-index: 2;
 
+  background-image: repeating-linear-gradient(
+    to top,
+    var(--font-border-color) 1px 3px,
+    transparent 1px 31px
+  );
+
   &::before {
     content: '';
     display: block;
@@ -49,42 +55,21 @@
   &::after {
     content: '';
     display: block;
-    background-image: url(../images/mobile/three-dots.png);
+    background-image: url(../images/mobile/three-red-dots.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 6px;
-    width: 26px;
-
-    filter: invert(10%);
+    height: 4px;
+    width: 32px;
 
     position: absolute;
     bottom: -55px;
     left: 50%;
     transform: translateX(-50%);
   }
-  //   background-image: repeating-linear-gradient(
-  //     to bottom,
-  //     var(--font-border-color),
-  //     var(--font-border-color)
-  //   );
-  //   border-bottom: 1px solid var(--font-border-color);
-
-  //   display: inline;
-  //   background-repeat: no-repeat;
-  //   background-repeat: repeat-x;
-  //   background-position: center bottom 1px;
-  //   background-size: 100% 3px;
-  //   background-image: linear-gradient(to right, red, blue);
-  background-image: repeating-linear-gradient(
-    to bottom,
-    transparent -10px,
-    transparent 19px,
-    var(--font-border-color) 21px,
-    transparent 20px
-  );
 }
 
 .customer-reviews__address {
+  position: relative;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.86;
@@ -92,7 +77,34 @@
 
   color: var(--text-alt-color);
 
+  z-index: 1000;
+
   margin-top: 52px;
+  // &::after {
+  //   content: '';
+  //   display: block;
+  //   background-image: url(../images/mobile/dots-house.png);
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   height: 12px;
+  //   width: 73px;
+
+  //   z-index: 1000;
+
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%);
+  // }
+}
+.slick-active[role='presentation'] {
+  background-image: url(../images/house.svg);
+  background-repeat: no-repeat;
+  background-size: 12px 12px;
+  background-position: center;
+}
+.slick-dots li.slick-active button:before {
+  opacity: 0;
 }
 
 @media (min-width: 768px) {
@@ -107,11 +119,9 @@
     letter-spacing: 0.04em;
 
     background-image: repeating-linear-gradient(
-      to bottom,
-      transparent -13px,
-      transparent 19px,
-      var(--font-border-color) 21px,
-      transparent 20px
+      to top,
+      var(--font-border-color) 1px 3px,
+      transparent 1px 31px
     );
   }
 }
@@ -127,4 +137,8 @@
     font-size: 16px;
     line-height: 1.86;
   }
+}
+
+.customer-reviews__slider-section .slick-arrow {
+  display: none;
 }
