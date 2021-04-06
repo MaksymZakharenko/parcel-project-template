@@ -229,13 +229,14 @@
 
 @media (min-width: 1280px) {
   .contacts {
+    background-image: url(../images/desktop/desk_address_bg.png);
+    background-repeat: no-repeat;
     padding: 20px 0;
     font-size: 16px;
   }
 
   .contacts__block {
-    background-image: url(../images/desktop/desk_address_bg.png);
-    background-repeat: no-repeat;
+
     margin-left: -30px;
     margin-top: -30px;
   }
