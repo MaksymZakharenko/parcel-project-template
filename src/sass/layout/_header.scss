@@ -119,6 +119,9 @@
   visibility: hidden;
   pointer-events: none;
   overflow-y: scroll;
+  @media screen and (min-width: 1280px) {
+  display: none;
+  }
 }
 
 .is-open {
